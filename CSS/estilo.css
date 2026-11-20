@@ -1,0 +1,198 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #222;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 40px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #00aaff;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* ===== BANNER ===== */
+
+.banner {
+  background: linear-gradient(rgba(0,119,204,0.8), rgba(0,119,204,0.8)),
+              url('banner-deportivo.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+.banner h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.banner .subtitulo {
+  font-size: 1.5em;
+  color: #ffcc00;
+}
+
+.banner button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== CATEGORÍAS ===== */
+
+.categorias {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+  flex-wrap: wrap;
+  background-color: #f0f8ff; /* azul muy claro */
+  padding: 20px;
+}
+
+.categoria {
+  background-color: #e0e0e0;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  width: 25%;
+  min-width: 200px;
+  margin: 10px;
+}
+
+
+/* ===== PRODUCTOS ===== */
+.productos {
+  text-align: center;
+  margin: 40px 0;
+  background-color: #fff3e0; /* naranja suave */
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+
+/* ===== OFERTAS ===== */
+
+.ofertas {
+  background-color: #0077cc;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+
+}
+
+.ofertas button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner {
+    padding: 60px 20px;
+  }
+
+  .banner h1 {
+    font-size: 1.5em;
+  }
+
+  .banner .subtitulo {
+    font-size: 1.2em;
+  }
+
+  .categorias {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categoria {
+    width: 80%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .banner h1 {
+    font-size: 1.2em;
+  }
+
+  .banner .subtitulo {
+    font-size: 1em;
+  }
+
+  .icons input {
+    width: 100%;
+  }
+}

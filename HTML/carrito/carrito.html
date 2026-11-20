@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Carrito</title>
+</head>
+
+<body>
+
+<h1>Carrito de Compras</h1>
+
+<p>
+Productos agregados:
+<span id="contador">0</span>
+</p>
+
+<table border="1">
+
+<tr>
+<th>Producto</th>
+<th>Cantidad</th>
+<th>Precio</th>
+</tr>
+
+</table>
+
+<script>
+
+let contador = 0;
+
+function agregarCarrito(){
+
+contador++;
+
+document.getElementById("contador").innerHTML = contador;
+
+}
+
+</script>
+
+</body>
+</html>
